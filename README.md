@@ -1,4 +1,4 @@
-# whats the release
+<h1 align="center">whats the release</h1>
 
 <p align="center">
   <a href="https://app.circleci.com/pipelines/github/grbull/whats-the-release">
