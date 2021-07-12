@@ -1,12 +1,12 @@
-export type ParsedMedia = {
-  type: 'Movie' | 'Show';
-  name: string;
-  season?: string;
-  episode?: string;
-  episodeName?: string;
-  year?: string;
-  resolution?: string;
-};
+export type ParsedMedia =
+  | { type: 'Movie'; name: string }
+  | {
+      type: 'Show';
+      name: string;
+      season: string;
+      episode: string;
+      episodeName?: string;
+    };
 
 export function parseMediaType(filename: string): ParsedMedia | undefined {
   const episodeMatch = filename.match(
@@ -20,7 +20,7 @@ export function parseMediaType(filename: string): ParsedMedia | undefined {
       name: name.split('.').join(' '),
       season,
       episode,
-      episodeName: episodeName.slice(0, -1).split('.').join(' '),
+      episodeName: episodeName?.slice(0, -1).split('.').join(' '),
     };
   }
 

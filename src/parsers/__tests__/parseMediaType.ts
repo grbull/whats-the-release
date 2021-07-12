@@ -36,6 +36,20 @@ describe('parseMediaType', () => {
 
   it('should parse a show', () => {
     const container = parseMediaType(
+      'Something.S01E01.1080p.WEB-DL.DDP5.1.H.264-moo.mkv'
+    );
+
+    expect(container).toStrictEqual({
+      type: 'Show',
+      name: 'Something',
+      season: '01',
+      episode: '01',
+      episodeName: undefined,
+    });
+  });
+
+  it('should parse a show with a title', () => {
+    const container = parseMediaType(
       'Something.S01E01.Journey.Into.Space.1080p.WEB-DL.DDP5.1.H.264-moo.mkv'
     );
 
