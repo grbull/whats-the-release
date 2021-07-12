@@ -1,6 +1,6 @@
 {
   "name": "whats-the-release",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple api to desconstruct and parse file names of movies and tv shows.",
   "main": "dist/index.js",
   "scripts": {
