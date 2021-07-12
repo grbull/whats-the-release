@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/circleci/build/github/grbull/whats-the-release?style=flat-square" />
   </a>
   <a href="https://github.com/grbull/whats-the-release/blob/master/CHANGELOG.md">
-    <img src="https://img.shields.io/npm/v/eslint-config-gbx?style=flat-square" />
+    <img src="https://img.shields.io/npm/v/whats-the-release?style=flat-square" />
   </a>
   <a href="https://github.com/grbull/whats-the-release/blob/master/LICENSE">
     <img src="https://img.shields.io/npm/l/whats-the-release?style=flat-square" />
