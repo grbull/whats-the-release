@@ -15,6 +15,7 @@ describe('parse', () => {
       mimeType: undefined,
       tags: [],
       releaseGroup: 'moo',
+      filename: 'Movie.Name.2021.1080p.WEB-DL.DDP5.1.Atmos.H.264-moo',
     });
   });
 
@@ -37,6 +38,8 @@ describe('parse', () => {
       mimeType: 'video/x-matroska',
       tags: [],
       releaseGroup: 'moo',
+      filename:
+        'Something.S01E01.Journey.Into.Space.1080p.WEB-DL.DDP5.1.H.264-moo.mkv',
     });
   });
 

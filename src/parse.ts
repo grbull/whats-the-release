@@ -19,6 +19,7 @@ export type WtrResult = ParsedMedia & {
   mimeType?: string;
   tags?: string[];
   releaseGroup?: string;
+  filename: string;
 };
 
 export function parse(fn: string): WtrResult {
@@ -43,5 +44,6 @@ export function parse(fn: string): WtrResult {
     mimeType: container?.mimeType,
     tags: parseTags(filename),
     releaseGroup: parseReleaseGroup(filename),
+    filename: filename,
   };
 }
